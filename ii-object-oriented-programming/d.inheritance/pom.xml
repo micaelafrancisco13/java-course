@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>ii-object-oriented-programming</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>d.inheritance</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>_2-inheritance</module>
+        <module>_3-the-Object-class</module>
+        <module>_4-constructors-and-inheritance</module>
+        <module>_5-access-modifiers</module>
+        <module>_6-method-overriding</module>
+        <module>_7-upcasting-and-downcasting</module>
+        <module>_8-comparing-objects</module>
+        <module>_9-polymorphism</module>
+        <module>_10-abstract-classes-and-methods</module>
+        <module>_11-final-classes-and-methods</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

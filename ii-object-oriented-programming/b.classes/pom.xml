@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>ii-object-oriented-programming</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>b.classes</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>_3-creating-classes</module>
+        <module>_4-creating-objects</module>
+        <module>_5-memory-allocation-and-deallocation</module>
+        <module>_7-encapsulation</module>
+        <module>_8-getters-and-setters</module>
+        <module>_9-abstraction</module>
+        <module>_10-coupling</module>
+        <module>_11-reducing-coupling</module>
+        <module>_12-constructors</module>
+        <module>_13-method-overloading</module>
+        <module>_14-constructor-overloading</module>
+        <module>_15-static-members</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

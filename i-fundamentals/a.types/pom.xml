@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>i-fundamentals</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>a.types</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>_3-primitive-types</module>
+        <module>_4-reference-types</module>
+        <module>_5-primitive-vs-reference-types</module>
+        <module>_6-strings</module>
+        <module>_7-escape-sequences</module>
+        <module>_8-one-dimensional-array</module>
+        <module>_9-multi-dimensional-arrays</module>
+        <module>_10-constants</module>
+        <module>_11-arithmetic-expressions</module>
+        <module>_13-casting</module>
+        <module>_14-the-Math-class</module>
+        <module>_15-formatting-numbers</module>
+        <module>_16-reading-input</module>
+        <module>_17-exercise-mortgage-calculator</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>ii-object-oriented-programming</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>c.refactoring-towards-oop-design</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>_3-needed-classes</module>
+        <module>_4-console-class-extraction</module>
+        <module>_5-overloading-methods</module>
+        <module>_6-MortgageReport-class-extraction</module>
+        <module>_7-MortgageCalculator-class-extraction</module>
+        <module>_8-moving-away-from-static-members</module>
+        <module>_9-moving-static-fields</module>
+        <module>_10-duplicate-logic-extraction</module>
+        <module>_11-remaining-balances-extraction</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

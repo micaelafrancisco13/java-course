@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>iii-advanced-topics</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>f.streams</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>_2-imperative-vs-functional-programming</module>
+        <module>_3-stream-creation</module>
+        <module>_4-mapping-elements</module>
+        <module>_5-filtering-elements</module>
+        <module>_6-slicing-a-stream</module>
+        <module>_7-sorting-streams</module>
+        <module>_8-getting-distinct-elements</module>
+        <module>_9-peeking-elements</module>
+        <module>_10-simple-reducers</module>
+        <module>_11-reducing-a-stream</module>
+        <module>_12-collectors</module>
+        <module>_13-grouping-elements</module>
+        <module>_14-partitioning-elements</module>
+        <module>_15-primitive-type-streams</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

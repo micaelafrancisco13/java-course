@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>iii-advanced-topics</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>d.collections</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>_2-overview-of-collections-framework</module>
+        <module>_3-the-need-for-iterables</module>
+        <module>_4-the-Iterable-interface</module>
+        <module>_5-the-Iterator-interface</module>
+        <module>_6-the-Collection-interface</module>
+        <module>_7-the-List-interface</module>
+        <module>_8-the-Comparable-interface</module>
+        <module>_9-the-Comparator-interface</module>
+        <module>_10-the-Queue-interface</module>
+        <module>_11-the-Set-interface</module>
+        <module>_12-hash-tables</module>
+        <module>_13-the-Map-interface</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
