@@ -32,7 +32,7 @@ public class Main {
 
         // initializing a set
         Set<String> set1 = new HashSet<>(Arrays.asList("a", "b", "c"));
-        Set<String> set2 = new HashSet<>(Arrays.asList("b", "c", "d"));
+        Set<String> set2 = new HashSet<>(Arrays.asList("b", "c", "d", "e", "f"));
 
         // 4 operations on a set
         // these operations are mutable
@@ -41,7 +41,7 @@ public class Main {
         System.out.println("set1 " + set1);
 
         // the second one is intersection, which returns the common items in
-        // both sets
+        // both sets and includes the remaining items in the set2
         set1.retainAll(set2);
         System.out.println("set1 " + set1);
 
