@@ -5,7 +5,7 @@ import java.util.function.Supplier;
 
 public class LambdasDemo {
     public static void show() {
-        DoubleSupplier doubleSupplier = Math::random;
+        DoubleSupplier doubleSupplier = Math::random; // () -> Math.random()
         System.out.println(doubleSupplier.getAsDouble());
 
         // line 8 can also be written as

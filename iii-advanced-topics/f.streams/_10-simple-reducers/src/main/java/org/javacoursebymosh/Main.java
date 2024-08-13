@@ -20,7 +20,7 @@ public class Main {
         // peek()
 
         // reducers reduce stream of objects to a single object.
-        // reducers are terminal operations, they produce a result.
+        // reducers are immediate operations, they produce a result.
         // the following are examples:
         // count()
         // anyMatch(predicate)
