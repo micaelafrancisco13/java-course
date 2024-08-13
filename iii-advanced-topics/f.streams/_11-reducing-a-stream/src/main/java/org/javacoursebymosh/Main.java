@@ -14,7 +14,7 @@ public class Main {
         // collection.
         var sum = movies.stream()
                 .map(Movie::getLikes)
-                .reduce(0, Integer::sum);
+                .reduce(0, Integer::sum); // (a, b) -> Integer.sum(a + b)
         System.out.println(sum);
 
         // behind the scenes of reduce()
