@@ -22,6 +22,7 @@
         <module>_9-strategies-for-thread-safety</module>
         <module>_10-confinement</module>
         <module>_11-locks</module>
+        <module>_12-the-synchronized-keyword</module>
     </modules>
 
     <properties>
