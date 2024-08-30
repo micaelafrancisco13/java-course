@@ -22,7 +22,7 @@ public class ThreadDemo {
         System.out.println("---Loop---");
 
         // simulates downloading ten files concurrently
-        for (int i = 0; i < 9; ++i) {
+        for (int i = 0; i < 10; ++i) {
             var thread = new Thread(new DownloadFileTask());
             thread.start();
         }
