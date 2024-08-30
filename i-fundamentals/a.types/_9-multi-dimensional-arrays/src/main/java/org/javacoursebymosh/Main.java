@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
         // 3 rows and 2 columns
         int[][] arrayInt = {
-                { 2, 4 },
-                { 1, 3 },
-                { 0, -1 }
+                {2, 4},
+                {1, 3},
+                {0, -1}
         };
         // assignment initialization:
         // arrayInt[0][0] = 2;  arrayInt[0][1] = 4;

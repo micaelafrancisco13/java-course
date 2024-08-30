@@ -30,8 +30,7 @@ public class Main {
             if (annualInterestRate > 0 && annualInterestRate <= 30) {
                 monthlyInterestRate = (annualInterestRate / 100) / 12;
                 break;
-            }
-            else System.out.println("Enter a value greater than 0 and less than or equal to 30.");
+            } else System.out.println("Enter a value greater than 0 and less than or equal to 30.");
         }
 
         byte numberOfPayments;
@@ -40,11 +39,10 @@ public class Main {
             byte numberOfYearsToPay = scanner.nextByte();
             final byte MONTHS = 12;
 
-            if (numberOfYearsToPay >=1 && numberOfYearsToPay <= 30) {
+            if (numberOfYearsToPay >= 1 && numberOfYearsToPay <= 30) {
                 numberOfPayments = (byte) (numberOfYearsToPay * MONTHS);
                 break;
-            }
-            else System.out.println("Enter a value between 1 and 30.");
+            } else System.out.println("Enter a value between 1 and 30.");
         }
 
         double mortgage =

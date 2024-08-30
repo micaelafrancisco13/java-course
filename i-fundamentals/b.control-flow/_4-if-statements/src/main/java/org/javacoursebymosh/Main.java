@@ -12,8 +12,7 @@ public class Main {
         if (temperature > 30) {
             System.out.println("It is a hot day");
             System.out.println("Drink plenty of water");
-        }
-        else if ((temperature > 20) && (temperature <= 30))
+        } else if ((temperature > 20) && (temperature <= 30))
             System.out.println("It is a nice day");
         else
             System.out.println("It is so fucking cold");

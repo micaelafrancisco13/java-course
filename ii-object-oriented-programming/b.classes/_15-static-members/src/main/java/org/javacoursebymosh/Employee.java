@@ -1,11 +1,10 @@
 package org.javacoursebymosh;
 
 public class Employee {
-    private int baseSalary;
-    private int hourlyRate;
-
     // static field
     private static int numberOfEmployees;
+    private int baseSalary;
+    private int hourlyRate;
 
     public Employee(int baseSalary, int hourlyRate) {
         setBaseSalary(baseSalary);

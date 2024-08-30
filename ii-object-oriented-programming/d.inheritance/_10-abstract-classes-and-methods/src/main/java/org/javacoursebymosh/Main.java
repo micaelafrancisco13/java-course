@@ -5,7 +5,7 @@ public class Main {
         // Abstract classes can't be instantiated
         // UI control is an abstract concept, its implementation
         // varies among its subclasses (go to UIControl class)
-        UIControl[] controls = { new TextBox(), new CheckBox() };
+        UIControl[] controls = {new TextBox(), new CheckBox()};
 
         for (var control : controls) control.render();
     }

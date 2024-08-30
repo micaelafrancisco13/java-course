@@ -9,11 +9,11 @@ public class ThreadDemo {
 
         for (var i = 0; i < 10; ++i) {
             /*
-            * Instead of sharing a single status object across multiple threads, you're going to have each thread work with
-            * its own status object.
-            *
-            * Go to DownloadFileTask class.
-            * */
+             * Instead of sharing a single status object across multiple threads, you're going to have each thread work with
+             * its own status object.
+             *
+             * Go to DownloadFileTask class.
+             * */
             var task = new DownloadFileTask();
             var thread = new Thread(task);
             statuses.add(task.getStatus());
@@ -35,7 +35,7 @@ public class ThreadDemo {
         System.out.println(totalBytes);
 
         /*
-        * With this, we no longer have a race condition because these threads are not modifying a shared object.
-        * */
+         * With this, we no longer have a race condition because these threads are not modifying a shared object.
+         * */
     }
 }

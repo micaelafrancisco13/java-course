@@ -5,7 +5,7 @@ public class Main {
         // for-each loops are used to iterate over arrays
         // or collections
 
-        String[] fruits = { "mango", "lychee", "grape" };
+        String[] fruits = {"mango", "lychee", "grape"};
 
         System.out.println("For loop:");
         for (int i = 0; i < fruits.length; ++i)

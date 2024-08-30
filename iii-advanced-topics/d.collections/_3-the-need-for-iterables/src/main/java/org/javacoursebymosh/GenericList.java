@@ -1,6 +1,6 @@
 package org.javacoursebymosh;
 
-public class GenericList<T > {
+public class GenericList<T> {
     private T[] items = (T[]) new Object[10];
     private int count;
 

@@ -34,12 +34,12 @@ public class Main {
         System.out.println(Runtime.getRuntime().availableProcessors()); // prints 8
 
         /*
-        * This program is using two threads. One of them is the main thread running our main method. The other is a background
-        * thread that runs the garbage collector. This garbage collector removes unused objects from memory. So our program is
-        * using two threads, but we have eight threads available.
-        *
-        * Now, this number may be different on your machine. My machine has four cores, and each core has two threads. So I have
-        * eight threads available that I can use to run things in parallel.
-        * */
+         * This program is using two threads. One of them is the main thread running our main method. The other is a background
+         * thread that runs the garbage collector. This garbage collector removes unused objects from memory. So our program is
+         * using two threads, but we have eight threads available.
+         *
+         * Now, this number may be different on your machine. My machine has four cores, and each core has two threads. So I have
+         * eight threads available that I can use to run things in parallel.
+         * */
     }
 }

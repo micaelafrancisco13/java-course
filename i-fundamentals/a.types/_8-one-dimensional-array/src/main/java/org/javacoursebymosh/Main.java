@@ -9,7 +9,7 @@ public class Main {
         // "numbers" has 5 elements in it
         int[] numbers = new int[5];
 
-        int[] arrayInt = { 3, 1, 4, 5, 2 };
+        int[] arrayInt = {3, 1, 4, 5, 2};
         // assignment initialization
         // arrayInt[0] = 3;
         // arrayInt[1] = 1;

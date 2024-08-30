@@ -66,4 +66,5 @@ public class Main {
                 / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
 
         return mortgage;
-    }}
+    }
+}

@@ -21,8 +21,7 @@ public class ExceptionsDemo {
 
             // the correct way to handle this case is by using the
             // block 'finally'
-        }
-        catch (IOException ex) {
+        } catch (IOException ex) {
             System.out.println("Could not read data");
         }
         // in this block, we can release resources such as file handlers,

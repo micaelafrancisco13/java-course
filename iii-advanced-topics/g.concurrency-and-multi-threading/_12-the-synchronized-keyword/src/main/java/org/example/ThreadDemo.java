@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class ThreadDemo {
     public static void show() {
         /*
-        * With the "synchronize" keyword, we can achieve the same result, but without explicitly creating a lock object and
-        * locking and unlocking it.
-        *
-        * */
+         * With the "synchronize" keyword, we can achieve the same result, but without explicitly creating a lock object and
+         * locking and unlocking it.
+         *
+         * */
 
         var status = new DownloadStatus();
         var threads = new ArrayList<Thread>();

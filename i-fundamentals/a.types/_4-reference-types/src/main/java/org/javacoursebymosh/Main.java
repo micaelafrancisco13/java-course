@@ -1,6 +1,7 @@
 package org.javacoursebymosh;
 
 // we are importing the Date class from the java.util package
+
 import java.util.Date;
 
 public class Main {

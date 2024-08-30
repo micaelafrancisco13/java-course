@@ -1,11 +1,6 @@
 package org.javacoursebymosh;
 
 public class LambdasDemo {
-    // the signature of this method matches the print() of the Printer interface
-    public void print(String message) {
-        System.out.println("Printing to console using method reference... " + message);
-    }
-
     public static void printAgain(String message) {
         System.out.println("Printing to console using method reference... " + message);
     }
@@ -29,5 +24,10 @@ public class LambdasDemo {
 
     public static void greet(Printer printer) {
         printer.print("Hello world");
+    }
+
+    // the signature of this method matches the print() of the Printer interface
+    public void print(String message) {
+        System.out.println("Printing to console using method reference... " + message);
     }
 }

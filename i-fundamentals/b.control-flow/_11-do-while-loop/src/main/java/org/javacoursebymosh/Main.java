@@ -19,7 +19,7 @@ public class Main {
 
         System.out.print("Enter your password: ");
         String password = input.next();
-        if((password.equals("ela13")))
+        if ((password.equals("ela13")))
             System.out.println("Access granted.");
 
         else {

@@ -48,7 +48,7 @@ public class CollectionsDemo {
         var arrayCollection = collection.toArray(new String[0]);
         System.out.println(arrayCollection[0]);
 
-        Collection<String> other  = new ArrayList<>();
+        Collection<String> other = new ArrayList<>();
 
         // note that if we used "var" for line 52, the type of
         // the "other" variable is the ArrayList class, not the

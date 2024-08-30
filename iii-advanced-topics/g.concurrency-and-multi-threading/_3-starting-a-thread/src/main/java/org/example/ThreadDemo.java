@@ -28,7 +28,7 @@ public class ThreadDemo {
         }
 
         /*
-        * Even though these messages are appearing sequentially on the terminal, these threads start and run-in parallel.
-        * */
+         * Even though these messages are appearing sequentially on the terminal, these threads start and run-in parallel.
+         * */
     }
 }

@@ -18,7 +18,7 @@ public class Main {
 
         // explicit conversion is based on less precise data type
         // e.g. double to int
-        int b = (int)a + 2;
+        int b = (int) a + 2;
 
         // note that casting is for compatible data types.
 

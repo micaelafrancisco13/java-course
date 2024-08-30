@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class ThreadDemo {
     public static void show() {
         /*
-        * Let's say as part of downloading multiple files, we want to show the total number of bytes we have downloaded so
-        * far. So we need to store the total value somewhere and have multiple threads increment it as they are downloading
-        * files. This is going to cause a race condition, which means multiple threads are racing or competing to modify a
-        * shared resource.
-        *
-        * */
+         * Let's say as part of downloading multiple files, we want to show the total number of bytes we have downloaded so
+         * far. So we need to store the total value somewhere and have multiple threads increment it as they are downloading
+         * files. This is going to cause a race condition, which means multiple threads are racing or competing to modify a
+         * shared resource.
+         *
+         * */
 
         var status = new DownloadStatus();
 

@@ -21,8 +21,7 @@ public class ExceptionsDemo {
                 var writer = new FileWriter("file2.txt");
         ) {
             var value = reader.read();
-        }
-        catch (IOException ex) {
+        } catch (IOException ex) {
             System.out.println("Could not read data");
         }
     }

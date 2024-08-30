@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        while(true) {
+        while (true) {
             System.out.print("Enter a value from 5 to 10: ");
             int value = input.nextByte();
 

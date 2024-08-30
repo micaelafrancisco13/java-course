@@ -17,5 +17,6 @@ public class Main {
         // another instance of the TextBox class
         var textBox2 = new TextBox();
         textBox2.setText("Box 2");
-        System.out.println(textBox2.text);}
+        System.out.println(textBox2.text);
+    }
 }

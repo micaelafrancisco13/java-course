@@ -15,7 +15,7 @@ public class Main {
             public void print(String message) {
                 System.out.println(
                         "Printing to console using anonymous inner class... " +
-                        message);
+                                message);
             }
         });
 
