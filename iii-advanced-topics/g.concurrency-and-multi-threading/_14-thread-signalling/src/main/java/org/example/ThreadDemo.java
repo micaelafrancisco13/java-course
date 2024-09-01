@@ -45,7 +45,7 @@ public class ThreadDemo {
             * wait and notify can get pretty tricky in complex applications. If you don't use them properly, you're going to run into all
             * sorts of weird issues. So I would say don't use them in new code. These days, we have better tools for implementing this kind
             * of communication between threads, we'll look at them in the next section.
-            * 
+            *
             * */
             System.out.println(status.getTotalBytes());
         });

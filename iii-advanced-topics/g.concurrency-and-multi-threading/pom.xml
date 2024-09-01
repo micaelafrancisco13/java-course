@@ -25,6 +25,7 @@
         <module>_12-the-synchronized-keyword</module>
         <module>_13-the-volatile-keyword</module>
         <module>_14-thread-signalling</module>
+        <module>_15-atomic-objects</module>
     </modules>
 
     <properties>
