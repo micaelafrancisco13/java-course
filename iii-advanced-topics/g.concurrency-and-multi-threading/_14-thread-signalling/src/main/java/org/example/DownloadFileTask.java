@@ -18,18 +18,18 @@ public class DownloadFileTask implements Runnable {
 
         status.setDownloadFileFinished();
         /*
-        * After we call the line above, we need to notify the other thread that the state of this object is changed.
-        *
-        * Just like the wait(), we need to wrap this line inside a synchronized block. Otherwise, the JVM is going to throw a runtime
-        * exception.
-        * */
+         * After we call the line above, we need to notify the other thread that the state of this object is changed.
+         *
+         * Just like the wait(), we need to wrap this line inside a synchronized block. Otherwise, the JVM is going to throw a runtime
+         * exception.
+         * */
         synchronized (status) {
             status.notify();
         }
         /*
-        * We also have notifyAll(). This is useful if you have multiple threads waiting for a change on this object. With this, we can
-        * notify them all.
-        * */
+         * We also have notifyAll(). This is useful if you have multiple threads waiting for a change on this object. With this, we can
+         * notify them all.
+         * */
 
         System.out.println("Download complete... " + Thread.currentThread().getName());
     }

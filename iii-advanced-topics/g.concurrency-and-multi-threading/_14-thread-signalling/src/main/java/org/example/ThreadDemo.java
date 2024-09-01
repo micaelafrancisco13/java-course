@@ -36,17 +36,17 @@ public class ThreadDemo {
                 }
             }
             /*
-            * With this implementation, the moment the second thread gets started, the while loop above is going to start. And in the
-            * first iteration, the wait() is going to put this thread into sleep. Hence, the while loop above is not going to get
-            * executed a million times. Now, the moment the first thread finishes its job, it is going to notify the second thread. So
-            * the second thread is going to wake up, and then it's going to print the total bytes.
-            *
-            * So this is a more efficient implementation than a while loop with an empty body that runs a million times. Having said that,
-            * wait and notify can get pretty tricky in complex applications. If you don't use them properly, you're going to run into all
-            * sorts of weird issues. So I would say don't use them in new code. These days, we have better tools for implementing this kind
-            * of communication between threads, we'll look at them in the next section.
-            *
-            * */
+             * With this implementation, the moment the second thread gets started, the while loop above is going to start. And in the
+             * first iteration, the wait() is going to put this thread into sleep. Hence, the while loop above is not going to get
+             * executed a million times. Now, the moment the first thread finishes its job, it is going to notify the second thread. So
+             * the second thread is going to wake up, and then it's going to print the total bytes.
+             *
+             * So this is a more efficient implementation than a while loop with an empty body that runs a million times. Having said that,
+             * wait and notify can get pretty tricky in complex applications. If you don't use them properly, you're going to run into all
+             * sorts of weird issues. So I would say don't use them in new code. These days, we have better tools for implementing this kind
+             * of communication between threads, we'll look at them in the next section.
+             *
+             * */
             System.out.println(status.getTotalBytes());
         });
 

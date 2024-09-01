@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.ArrayList;
-
 public class ThreadDemo {
     public static void show() {
         /*
@@ -15,9 +13,9 @@ public class ThreadDemo {
          * */
 
         /*
-        * We want to create two threads. One thread simulates downloading a file, and the other checks to see if the download is
-        * finished. When the download is finished, we want to report something to the user.
-        * */
+         * We want to create two threads. One thread simulates downloading a file, and the other checks to see if the download is
+         * finished. When the download is finished, we want to report something to the user.
+         * */
 
         var status = new DownloadStatus();
         var thread1 = new Thread(new DownloadFileTask(status));
