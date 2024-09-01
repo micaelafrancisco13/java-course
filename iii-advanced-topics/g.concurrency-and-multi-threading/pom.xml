@@ -26,6 +26,7 @@
         <module>_13-the-volatile-keyword</module>
         <module>_14-thread-signalling</module>
         <module>_15-atomic-objects</module>
+        <module>_16-adders</module>
     </modules>
 
     <properties>
