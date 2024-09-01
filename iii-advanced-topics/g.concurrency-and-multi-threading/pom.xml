@@ -27,6 +27,7 @@
         <module>_14-thread-signalling</module>
         <module>_15-atomic-objects</module>
         <module>_16-adders</module>
+        <module>_17-synchronized-collections</module>
     </modules>
 
     <properties>
