@@ -24,6 +24,7 @@
         <module>_11-locks</module>
         <module>_12-the-synchronized-keyword</module>
         <module>_13-the-volatile-keyword</module>
+        <module>_14-thread-signalling</module>
     </modules>
 
     <properties>
