@@ -16,11 +16,10 @@ public class DownloadStatus {
     }
 
     /*
-     * We want to make sure that only one third at a time can execute this piece of code. To do that, we wrap this inside a
-     * synchronized block like this. Now, here in parentheses, we should pass an object. This is what we call a monitor
-     * object.
-     *
+     * We want to make sure that only one thread at a time can execute this piece of code.
      * synchronized(monitor)
+     * To do that, we wrap this inside a synchronized block like this. Now, here in parentheses, we should pass an object.
+     * This is what we call a monitor object.
      *
      * Java is going to get the built-in lock from that monitor object and use it under the hood.
      *

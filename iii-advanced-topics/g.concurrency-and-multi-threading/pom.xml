@@ -23,6 +23,7 @@
         <module>_10-confinement</module>
         <module>_11-locks</module>
         <module>_12-the-synchronized-keyword</module>
+        <module>_13-the-volatile-keyword</module>
     </modules>
 
     <properties>
