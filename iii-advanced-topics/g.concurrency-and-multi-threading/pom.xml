@@ -28,6 +28,7 @@
         <module>_15-atomic-objects</module>
         <module>_16-adders</module>
         <module>_17-synchronized-collections</module>
+        <module>_18-concurrent-collections</module>
     </modules>
 
     <properties>
