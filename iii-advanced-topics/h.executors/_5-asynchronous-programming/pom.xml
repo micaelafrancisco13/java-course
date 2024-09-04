@@ -5,18 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>iii-advanced-topics</artifactId>
+        <artifactId>h.executors</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>h.executors</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>_2-thread-pools</module>
-        <module>_3-executors</module>
-        <module>_4-callables-and-futures</module>
-        <module>_5-asynchronous-programming</module>
-    </modules>
+    <artifactId>_5-asynchronous-programming</artifactId>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
