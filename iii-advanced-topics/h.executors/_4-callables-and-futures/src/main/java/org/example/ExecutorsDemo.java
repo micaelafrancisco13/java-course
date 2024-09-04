@@ -21,22 +21,22 @@ public class ExecutorsDemo {
                 return 1;
             });
             /*
-            * This Future is an interface that represents the future result of an operation, an operation that will complete in the future.
-            * It may complete in five hundred milliseconds or two seconds or five seconds, sometime in the future. So the result of this
-            * operation is not going to be calculated immediately using the CPU. So with this Future object, we can get the future result
-            * of an operation.
-            *
-            * When we call this submit method, the submit method is going to return immediately. So it's not going to wait for three
-            * seconds. It's going to immediately return a future object. With this future object, we can get the result of this operation.
-            *
-            * */
+             * This Future is an interface that represents the future result of an operation, an operation that will complete in the future.
+             * It may complete in five hundred milliseconds or two seconds or five seconds, sometime in the future. So the result of this
+             * operation is not going to be calculated immediately using the CPU. So with this Future object, we can get the future result
+             * of an operation.
+             *
+             * When we call this submit method, the submit method is going to return immediately. So it's not going to wait for three
+             * seconds. It's going to immediately return a future object. With this future object, we can get the result of this operation.
+             *
+             * */
 
             System.out.println("Do more work...");
 
             /*
-            * Now, this method is going to block the current thread and have it wait until the result of this operation is ready.
-            * Eventually, it's going to return a value. In this case, it's going to return an integer because our task returns an integer.
-            * */
+             * Now, this method is going to block the current thread and have it wait until the result of this operation is ready.
+             * Eventually, it's going to return a value. In this case, it's going to return an integer because our task returns an integer.
+             * */
             try {
                 System.out.println("Thread name: " + Thread.currentThread().getName());
                 var result = future.get();

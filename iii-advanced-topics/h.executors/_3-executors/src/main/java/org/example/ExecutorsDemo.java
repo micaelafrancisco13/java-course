@@ -32,10 +32,10 @@ public class ExecutorsDemo {
          * */
 
         /*
-        * At compile-time, the variable "executor" is of type ExecutorService interface. At runtime, the type of this object is going
-        * to be ThreadPoolExecutor.
-        *
-        * */
+         * At compile-time, the variable "executor" is of type ExecutorService interface. At runtime, the type of this object is going
+         * to be ThreadPoolExecutor.
+         *
+         * */
         try (var executor = Executors.newFixedThreadPool(2)) {
 
             /*
@@ -76,10 +76,10 @@ public class ExecutorsDemo {
             executor.shutdown();
         }
         /*
-        * But you have to remember; even when using the executor framework, we still have to worry about the concurrency problems. So if
-        * two tasks modify an object concurrently, we're going to run into issues. So the executor framework does not protect us from the
-        * concurrency problems we talked about in the last section. It just simplifies thread-manipulation.
-        *
-        * */
+         * But you have to remember; even when using the executor framework, we still have to worry about the concurrency problems. So if
+         * two tasks modify an object concurrently, we're going to run into issues. So the executor framework does not protect us from the
+         * concurrency problems we talked about in the last section. It just simplifies thread-manipulation.
+         *
+         * */
     }
 }
