@@ -17,6 +17,7 @@
         <module>_4-callables-and-futures</module>
         <module>_5-asynchronous-programming</module>
         <module>_6-completable-futures</module>
+        <module>_7-completable-future-creation</module>
     </modules>
 
     <properties>
