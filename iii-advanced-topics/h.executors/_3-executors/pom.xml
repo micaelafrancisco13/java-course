@@ -5,16 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>iii-advanced-topics</artifactId>
+        <artifactId>h.executors</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>h.executors</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>_2-thread-pools</module>
-        <module>_3-executors</module>
-    </modules>
+    <artifactId>_3-executors</artifactId>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
