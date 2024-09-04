@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>iii-advanced-topics</artifactId>
+        <artifactId>h.executors</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>h.executors</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>_2-thread-pools</module>
-        <module>_3-executors</module>
-        <module>_4-callables-and-futures</module>
-        <module>_5-asynchronous-programming</module>
-        <module>_6-completable-futures</module>
-    </modules>
+    <artifactId>_6-completable-futures</artifactId>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
