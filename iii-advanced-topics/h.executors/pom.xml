@@ -20,6 +20,7 @@
         <module>_7-completable-future-creation</module>
         <module>_8-asynchronous-API-implementation</module>
         <module>_9-running-code-on-completion</module>
+        <module>_10-handling-exceptions</module>
     </modules>
 
     <properties>

@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>_9-running-code-on-completion</artifactId>
+    <artifactId>_10-handling-exceptions</artifactId>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
