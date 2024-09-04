@@ -1,6 +1,6 @@
 package org.example;
 
-public class ExecutorsDemo {
+public class CompletableFuturesDemo {
     public static void show() {
         // How to create an asynchronous API?
         var service = new MailService();

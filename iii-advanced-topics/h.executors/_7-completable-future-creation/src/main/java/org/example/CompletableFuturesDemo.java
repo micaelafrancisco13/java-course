@@ -3,7 +3,7 @@ package org.example;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-public class ExecutorsDemo {
+public class CompletableFuturesDemo {
     public static void show() {
         /*
          * This CompletableFuture class has a couple of asynchronous methods that we use for creating a CompletableFuture object.
