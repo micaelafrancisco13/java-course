@@ -18,6 +18,7 @@
         <module>e.lambda-expressions-and-functional-interfaces</module>
         <module>f.streams</module>
         <module>g.concurrency-and-multi-threading</module>
+        <module>h.executors</module>
     </modules>
 
     <properties>
