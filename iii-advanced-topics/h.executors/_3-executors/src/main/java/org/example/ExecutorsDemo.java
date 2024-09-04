@@ -78,7 +78,7 @@ public class ExecutorsDemo {
         /*
         * But you have to remember; even when using the executor framework, we still have to worry about the concurrency problems. So if
         * two tasks modify an object concurrently, we're going to run into issues. So the executor framework does not protect us from the
-        * concurrency problems we talked about in the last section. It just simplifies threat manipulation.
+        * concurrency problems we talked about in the last section. It just simplifies thread-manipulation.
         *
         * */
     }
