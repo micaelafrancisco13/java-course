@@ -6,18 +6,18 @@ public class ExecutorsDemo {
         var service = new MailService();
 
         /*
-        * This send() is a synchronous or blocking operation. So if you print another message (line 13), we're not going to see it until
-        * this method returns.
-        * */
+         * This send() is a synchronous or blocking operation. So if you print another message (line 13), we're not going to see it until
+         * this method returns.
+         * */
         // service.send();
         System.out.println("Hello world!");
 
         /*
-        * Anytime we have a long-running operation, like querying a database, calling a remote service, working with the file system, we
-        * should run these operations asynchronously.
-        *
-        * Go back to MailService class.
-        * */
+         * Anytime we have a long-running operation, like querying a database, calling a remote service, working with the file system, we
+         * should run these operations asynchronously.
+         *
+         * Go back to MailService class.
+         * */
 
         // A non-blocking operation, hence, line 13 is going to be printed immediately.
         service.sendAsync();
