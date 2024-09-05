@@ -51,5 +51,15 @@ public class Main {
                 .map(Movie::getTitle)
                 .collect(Collectors.joining(", "));
         System.out.println("result5 " + result5);
+
+        var result6 = movies.stream().toList();
+        System.out.println("result6");
+        for (var r : result6)
+            System.out.println(r.getTitle() + " " + r.getLikes());
+
+        var result7 = result6.toArray(new Movie[0]);
+        System.out.println("result7");
+        for (var r : result7)
+            System.out.println(r.getTitle() + " " + r.getLikes());
     }
 }
