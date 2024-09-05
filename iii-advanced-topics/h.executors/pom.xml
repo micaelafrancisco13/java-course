@@ -22,6 +22,7 @@
         <module>_9-running-code-on-completion</module>
         <module>_10-handling-exceptions</module>
         <module>_11-transforming-a-completable-future</module>
+        <module>_12-composing-completable-futures</module>
     </modules>
 
     <properties>
