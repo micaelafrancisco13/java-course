@@ -23,6 +23,7 @@
         <module>_10-handling-exceptions</module>
         <module>_11-transforming-a-completable-future</module>
         <module>_12-composing-completable-futures</module>
+        <module>_13-combining-completable-futures</module>
     </modules>
 
     <properties>

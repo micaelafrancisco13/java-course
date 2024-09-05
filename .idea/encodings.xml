@@ -351,6 +351,8 @@
     <file url="file://$PROJECT_DIR$/iii-advanced-topics/h.executors/_11-transforming-a-completable-future/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/iii-advanced-topics/h.executors/_12-composing-completable-futures/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/iii-advanced-topics/h.executors/_12-composing-completable-futures/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iii-advanced-topics/h.executors/_13-combining-completable-futures/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iii-advanced-topics/h.executors/_13-combining-completable-futures/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/iii-advanced-topics/h.executors/_2-thread-pools/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/iii-advanced-topics/h.executors/_2-thread-pools/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/iii-advanced-topics/h.executors/_3-executors/src/main/java" charset="UTF-8" />
