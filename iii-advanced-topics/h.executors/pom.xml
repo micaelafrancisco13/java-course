@@ -30,6 +30,7 @@
         <module>_17-project-best-price-finder</module>
         <module>_18-solution-getting-a-quote</module>
         <module>_19-solution-getting-many-quotes</module>
+        <module>_20-solution-random-delays</module>
     </modules>
 
     <properties>
