@@ -25,6 +25,7 @@
         <module>_12-composing-completable-futures</module>
         <module>_13-combining-completable-futures</module>
         <module>_14-waiting-for-many-tasks-to-complete</module>
+        <module>_15-waiting-for-the-first-task</module>
     </modules>
 
     <properties>
