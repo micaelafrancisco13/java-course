@@ -24,6 +24,7 @@
         <module>_11-transforming-a-completable-future</module>
         <module>_12-composing-completable-futures</module>
         <module>_13-combining-completable-futures</module>
+        <module>_14-waiting-for-many-tasks-to-complete</module>
     </modules>
 
     <properties>
