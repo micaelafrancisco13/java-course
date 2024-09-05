@@ -26,6 +26,7 @@
         <module>_13-combining-completable-futures</module>
         <module>_14-waiting-for-many-tasks-to-complete</module>
         <module>_15-waiting-for-the-first-task</module>
+        <module>_16-handling-timeouts</module>
     </modules>
 
     <properties>
