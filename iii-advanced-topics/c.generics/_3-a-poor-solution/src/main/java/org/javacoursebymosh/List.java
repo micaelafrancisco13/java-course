@@ -2,7 +2,7 @@ package org.javacoursebymosh;
 
 // this class is for adding and retrieving items
 public class List {
-    private Object[] items = new Object[10];
+    private final Object[] items = new Object[10];
     private int count;
 
     public void add(Object item) {

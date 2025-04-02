@@ -19,7 +19,7 @@ public class Main {
         // the List class?
         // when we compile this code, JVM will convert it to
         // something like this:
-        list.add(Integer.valueOf(1));
+        // list.add(Integer.valueOf(1));
 
         // Integer class is a reference type.
         // This is the reason why we can pass a primitive value
