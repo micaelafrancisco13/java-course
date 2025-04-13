@@ -58,7 +58,7 @@ public class Main {
         // key=value
         // where value is the toString()'s implementation
         for (var entry : map.entrySet()) {
-            System.out.println(entry);
+            System.out.println("entry " + entry);
 
             // entry.getKey() returns the key
             // entry.getValue() returns the value

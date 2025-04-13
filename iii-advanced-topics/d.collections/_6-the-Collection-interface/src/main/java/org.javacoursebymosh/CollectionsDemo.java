@@ -46,7 +46,7 @@ public class CollectionsDemo {
         // an array with enough capacity to hold the collection
         // items
         var arrayCollection = collection.toArray(new String[0]);
-        System.out.println(arrayCollection[0]);
+        System.out.println(arrayCollection[0]); // prints the first array's element
 
         Collection<String> other = new ArrayList<>();
 
@@ -58,7 +58,8 @@ public class CollectionsDemo {
         other.addAll(collection);
 
         // compares 2 collections for equality
+        // equals() method compares the collections' elements
         // "==" compares objects by their memory address
-        System.out.println(collection.equals(other));
+        System.out.println(collection.equals(other)); // prints true
     }
 }

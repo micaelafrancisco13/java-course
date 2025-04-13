@@ -33,7 +33,7 @@ public class Main {
         // the cost of the for-each algorithm above increases linearly and in
         // direct proportion with the list's size.
 
-        // how a hash table stores items differs from how a list or an array
+        // how hash tables store items differ from how a list or an array
         // stores items.
         // no matter how many items we have in a hash table, we can find it
         // by only using 1 comparison.

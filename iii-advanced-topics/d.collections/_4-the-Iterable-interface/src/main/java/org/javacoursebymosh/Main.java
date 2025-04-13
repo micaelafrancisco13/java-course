@@ -4,9 +4,13 @@ public class Main {
     public static void main(String[] args) {
         // how can we iterate through a list w/o knowing its internal
         // implementation?
-        // the Iterable interface represents an object that can be
-        // looped through / iterated w/o knowing anything about its
-        // implementation detail.
+
+        // The Iterable<T> interface (in the java.lang package) represents
+        // a collection or any data structure that can provide an iterator
+        // over its elements. It declares one primary abstract method:
+        // Iterator<T> iterator();
+        // It signals that a class “is iterable”—that is, its instances can
+        // be iterated over (for example, using the enhanced for-loop).
 
         var list = new GenericList<String>();
         var iterator = list.iterator();
