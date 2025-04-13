@@ -2,20 +2,21 @@ package javacoursebymosh;
 
 public class Main {
     public static void main(String[] args) {
-        User user1 = new User(10);
-        User user2 = new Instructor(20);
+//        Wildcards are represented by the symbol ? and are used when you want to specify
+//        a range of acceptable types rather than a specific one. They make your code
+//        more flexible when you don’t need to know the exact type parameter.
+//
+//        There are three main forms:
+//        1. Unbounded Wildcard (?)
+        UnboundedWildcard.demo();
 
-        Utils.printUser(user1);
-        Utils.printUser(user2);
+//        Bounded Wildcards:
+//        2. Upper Bounded Wildcard (? extends T)
+        UpperBoundedWildcard.demo();
 
-        // what if we expected a list of Users to print?
-        var users = new GenericList<>();
-        Utils.printUsers(users);
+//        3. Lower Bounded Wildcard (? super T)
+        LowerBoundedWildcard.demo();
 
-        // what if we expected a list of Instructors to print?
-        // use a wildcard on the printUsers() on the Utils class
-        var instructors = new GenericList<Instructor>();
-        // we can pass here a list of anything
-//         Utils.printUsers(instructors);
+//        Each of these has unique use cases and rules.
     }
 }
