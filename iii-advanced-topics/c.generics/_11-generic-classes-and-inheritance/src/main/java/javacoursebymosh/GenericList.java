@@ -1,8 +1,15 @@
 package javacoursebymosh;
 
+import java.lang.reflect.Array;
+
 public class GenericList<T extends User> {
-    private T[] items = (T[]) new Object[10];
+    private final T[] items;
     private int count;
+
+    @SuppressWarnings("unchecked")
+    public GenericList(Class<T> clazz, int size) {
+        items = (T[]) Array.newInstance(clazz, size);
+    }
 
     public void add(T item) {
         items[count++] = item;
