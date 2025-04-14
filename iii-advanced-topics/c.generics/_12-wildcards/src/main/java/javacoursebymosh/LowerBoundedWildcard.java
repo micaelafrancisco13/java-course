@@ -36,5 +36,8 @@ public class LowerBoundedWildcard {
         // the safest type you can assume is Object:
         // Safe, but you don’t know if it’s an Integer, Number, etc.
         Object obj = list.getFirst();
+
+        // This is invalid as not all Number objects are Integers.
+        // Integer obj = list.getFirst();
     }
 }

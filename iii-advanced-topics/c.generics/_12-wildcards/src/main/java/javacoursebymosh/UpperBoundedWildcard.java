@@ -24,9 +24,11 @@ public class UpperBoundedWildcard {
         List<Integer> integers = Arrays.asList(1, 2, 3, 4);
         List<Double> doubles = Arrays.asList(1.5, 2.5, 3.5);
 
+        // This is invalid as Integer cannot be assigned to Double without casting it
+        // doubles.add(integers.getFirst());
+
         System.out.println(sumList(integers)); // Outputs 10.0
         System.out.println(sumList(doubles));  // Outputs 7.5
-
     }
 
 //    List<? extends Number> means the list can be a list of any class that is a
