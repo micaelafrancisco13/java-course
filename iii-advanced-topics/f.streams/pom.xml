@@ -26,6 +26,7 @@
         <module>_13-grouping-elements</module>
         <module>_14-partitioning-elements</module>
         <module>_15-primitive-type-streams</module>
+        <module>exercises</module>
     </modules>
 
     <properties>
