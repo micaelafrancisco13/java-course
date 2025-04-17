@@ -14,5 +14,9 @@ public class LambdasDemo {
 
         var result = increment.andThen(square).applyAsInt(3);
         System.out.println(result);
+
+        // "Unary" emphasizes that each operation (whether it’s computing a
+        // square root or modifying a numeric value) relies solely on one
+        // input, which is the defining characteristic of unary operations.
     }
 }
