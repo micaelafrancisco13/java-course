@@ -33,8 +33,7 @@ public class Main {
 
         // adds up all the movie likes
         // summingDouble(), summingLong(), and so on...
-        var result3 = movies.stream()
-                .collect(Collectors.summingInt(Movie::getLikes));
+        var result3 = (Integer) movies.stream().mapToInt(Movie::getLikes).sum();
         System.out.println("result3 " + result3);
 
         // prints

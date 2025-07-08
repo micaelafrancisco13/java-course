@@ -2,18 +2,28 @@ package javacoursebymosh;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Number> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 3.1));
-        List<Double> doubles = new ArrayList<>(Arrays.asList(1.1, 2.2, 3.3));
+        var isPermutation = false;
 
-        printNumberList(numbers);
-        addNumberList(numbers);
+        var stringOne = "abca"; //
+        var stringTwo = "bca";
 
-        printDoubleList(doubles);
-        addDoubleList(doubles);
+        // if stringOne or one of its possible arrangements is a substring of stringTwo
+        // return true
+
+        // getAllArrangementsOfStringOne
+        var map = new HashMap<String, Integer>();
+        stringOne.chars().forEach(c -> {
+            if (!map.containsKey(String.valueOf((char) c))) {
+                map.put(String.valueOf((char) c), 1);
+            } else {
+                map.put(String.valueOf((char) c), map.get(String.valueOf((char) c)) + 1);
+            }
+        });
     }
 
     private static void printNumberList(List<? extends Number> numbers) {
