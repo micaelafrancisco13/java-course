@@ -1,31 +1,62 @@
 package org.javacoursebymosh;
 
+/**
+ * Provides a detailed overview of Java's exception hierarchy. 🧐
+ *
+ * <h2>Top Level: {@code Throwable}</h2>
+ * The {@code Throwable} class is the superclass for all errors and exceptions in Java.
+ * It sits at the top of the hierarchy and defines the common characteristics shared
+ * by all throwables, such as an error message and the stack trace.
+ *
+ * <hr>
+ *
+ * <h2>Mid-Level: {@code Exception} and {@code Error}</h2>
+ * Directly beneath {@code Throwable} are two key subclasses:
+ *
+ * <ul>
+ *   <li><b>{@code Error}:</b> Represents serious problems that are generally external
+ *   to the application and from which a program cannot typically recover.
+ *   Examples include {@code StackOverflowError} and {@code OutOfMemoryError}.
+ *   You shouldn't try to catch these.</li>
+ *
+ *   <li><b>{@code Exception}:</b> Represents conditions that a program might want to catch.
+ *   It is the parent class for all checked and unchecked exceptions.</li>
+ * </ul>
+ *
+ * <hr>
+ *
+ * <h2>Low-Level: {@code RuntimeException}</h2>
+ * This class is a special subclass of {@code Exception} that defines <b>unchecked exceptions</b>.
+ *
+ * <ul>
+ *   <li>Any exception class that inherits from {@code RuntimeException} is considered
+ *   an <b>unchecked exception</b> (e.g., {@code NullPointerException}).
+ *   The compiler does not force you to handle them.</li>
+ *
+ *   <li>Any exception class that inherits from {@code Exception} but <em>not</em> from
+ *   {@code RuntimeException} is a <b>checked exception</b> (e.g., {@code IOException}).
+ *   The compiler requires you to handle these.</li>
+ * </ul>
+ *
+ * <hr>
+ *
+ * <h3>Example Inheritance Chain</h3>
+ * <pre>{@code
+ * java.lang.Object
+ *  └── java.lang.Throwable
+ *      ├── java.lang.Exception
+ *      │    └── java.lang.RuntimeException
+ *      │         └── java.lang.NullPointerException
+ *      └── java.lang.Error
+ * }</pre>
+ */
 public class Main {
+    /**
+     * The main entry point. This class serves primarily for documentation purposes.
+     *
+     * @param args Command-line arguments (not used).
+     */
     public static void main(String[] args) {
-        // Throwable class
-        // - top hierarchy
-        // - defines common characteristics for all exceptions and
-        //   errors such as error message and the stack trace
-
-        // Exception class and Error class
-        // - middle hierarchy
-        // - "Error" class, and all of its subtypes represent errors
-        //   that are external to our app such as stack overflow or
-        //   out-of-memory error.
-        // - "Exception" class is the parent for all checked and
-        //   unchecked exceptions
-
-        // RuntimeException class
-        // - bottom hierarchy
-        // - represents run-time or unchecked exceptions
-        // - if an exception class derives from the RuntimeException,
-        //   it's considered as an unchecked exception, otherwise, it
-        //   is a checked exception
-
-        // java.lang.Object
-        //     java.lang.Throwable
-        //         java.lang.Exception
-        //             java.lang.RuntimeException
-        //                 java.lang.NullPointerException
+        // This method is empty as the class is for demonstrating Javadoc.
     }
 }

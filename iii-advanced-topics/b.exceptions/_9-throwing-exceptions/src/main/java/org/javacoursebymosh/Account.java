@@ -2,26 +2,30 @@ package org.javacoursebymosh;
 
 import java.io.IOException;
 
+/**
+ * Represents a simple bank account to demonstrate exception throwing.
+ */
 public class Account {
-    // may throw an IOException
-    // "throws IOException"
-    // back to the Main class, that is where we wrap our code
-    // using the try-catch block
+
+    /**
+     * Deposits a specific value into the account.
+     * <p>
+     * This method practices <b>defensive programming</b> by validating its input. It ensures
+     * that only positive values can be deposited. This type of validation is critical at the
+     * boundaries of an application, where it receives input from users or external systems.
+     * <p>
+     * By using {@code throw new IOException()}, we are throwing a <b>checked exception</b>.
+     * This forces the caller of this method to explicitly handle the exception with a
+     * {@code try-catch} block or declare it in their own method signature. This is useful when
+     * you want to ensure the caller is aware of a potential failure condition.
+     *
+     * @param value The amount to deposit; must be greater than 0.
+     * @throws IOException if the {@code value} is less than or equal to 0.
+     */
     public void deposit(float value) throws IOException {
-        // this is called "defensive programming"
-        // only perform this validation whenever you receive
-        // input from the user or external system (at the boundary
-        // of the app
-        // if (value <= 0) throw new IllegalArgumentException();
-
-        // if you throw a checked exception, it's always paired
-        // with an exception handler
-
-        // what if we want to throw a checked exception? use the
-        // IOException.
-        // have the caller of this method handle the IOException.
-        // just like the FileReader class, it throws an exception.
-        // that we have to explicitly handle.
-        if (value <= 0) throw new IOException();
+        if (value <= 0) {
+            throw new IOException("Deposit amount must be positive.");
+        }
+        // Proceed with deposit logic here...
     }
 }
