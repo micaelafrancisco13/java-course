@@ -3,41 +3,48 @@ package javacoursebymosh;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Demonstrates the lower bounded wildcard {@code <? super Type>}.
+ *
+ * <h2>Lower Bounded Wildcard: {@code List<? super Integer>}</h2>
+ * This wildcard restricts the unknown type to be either {@code Integer} or a
+ * <b>supertype</b> of {@code Integer} (like {@code Number} or {@code Object}). It is
+ * ideal for scenarios where you need to <b>write</b> to a collection (a "consumer").
+ *
+ * <p>This follows the "Consumer Super" part of the <b>PECS</b> principle.</p>
+ *
+ * <h3>Rules:</h3>
+ * <ul>
+ *   <li><b>Writing Elements:</b> You can safely add elements of type {@code Integer} (or
+ *       its subtypes) to the list. This is because the list is guaranteed to be of a
+ *       type that can hold {@code Integer}s (e.g., {@code List<Integer>},
+ *       {@code List<Number>}).</li>
+ *   <li><b>Read-Restricted:</b> When you read from the list, the only type you can
+ *       safely assume is {@code Object}. The compiler doesn't know if the list contains
+ *       {@code Integer}s, {@code Number}s, or just plain {@code Object}s.</li>
+ * </ul>
+ */
 public class LowerBoundedWildcard {
     public static void demo() {
-//        The lower-bounded wildcard restricts the unknown type to be a supertype
-//        of T. It is used when you want to write data to a generic structure.
-
-//        Syntax: List<? super Integer>
-//        This means “a list of elements that are of some type that is a supertype
-//        of Integer” (for example, Number or Object).
-
-//        Write-Only (for Specific Types): With ? super T, you can add values of
-//        type T into the list because you are guaranteed that the list can accept
-//        T or any subclass of T. However, when reading from the list, all you can
-//        safely assume is that the objects are of type Object because the compiler
-//        doesn’t know exactly how far up the class hierarchy the list type is.
-
-//        Flexibility for Input Parameters: It’s especially useful for methods that
-//        need to insert items into a structure.
-
+        List<Integer> integerList = new ArrayList<>();
         List<Number> numberList = new ArrayList<>();
         List<Object> objectList = new ArrayList<>();
 
-        addIntegers(numberList);  // Legal: Number is a supertype of Integer.
-        addIntegers(objectList);  // Legal: Object is a supertype of Integer.
+        addIntegers(integerList);
+        addIntegers(numberList);
+        // addIntegers(objectList); // Uncommenting this would work if allowed by the method signature
     }
 
+    /**
+     * Adds integers to a list that can hold integers or their supertypes.
+     *
+     * @param list A list capable of consuming Integer objects.
+     */
     private static void addIntegers(List<? super Integer> list) {
         list.add(10);
         list.add(20);
 
-        // You can add Integer elements to the list, but if you try to read a value,
-        // the safest type you can assume is Object:
-        // Safe, but you don’t know if it’s an Integer, Number, etc.
-        Object obj = list.getFirst();
-
-        // This is invalid as not all Number objects are Integers.
-        // Integer obj = list.getFirst();
+        // Reading is restricted to Object.
+        Object obj = list.getFirst(); // For Java 21+ with List.getFirst()
     }
 }

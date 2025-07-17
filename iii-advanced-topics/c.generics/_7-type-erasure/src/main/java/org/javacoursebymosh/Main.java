@@ -1,20 +1,25 @@
 package org.javacoursebymosh;
 
+/**
+ * A class to introduce the concept of Java Bytecode.
+ */
 public class Main {
+
+    /**
+     * The main entry point for the application.
+     *
+     * <h2>Java Bytecode</h2>
+     * When you compile Java code (e.g., using <i>"Build Project"</i> in IntelliJ), the
+     * Java compiler does not produce native machine code directly. Instead, it
+     * generates <b>bytecode</b>.
+     *
+     * <p>Bytecode is a platform-independent representation of your program. The Java
+     * Virtual Machine (JVM) then takes this bytecode at runtime and translates it
+     * into native code for the specific operating system and hardware it's running
+     * on. This is the core mechanism behind Java's <i>"write once, run anywhere"</i>
+     * principle. ☕
+     */
     public static void main(String[] args) {
         var list = new GenericList<Short>();
-
-        // let's recompile our code
-        // Build -> Build Project
-        // select the GenericList class and from the view menu,
-        // click Show Bytecode
-
-        // bytecode is a platform-independent representation of our
-        // Java code. when we compile our Java code, the JVM will
-        // produce this bytecode that can run on different platforms.
-        // when we run our program, the JVM will convert this bytecode
-        // to the native code for the target platform.
-
-        // go to GenericList
     }
 }

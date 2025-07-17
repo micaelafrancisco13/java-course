@@ -3,39 +3,45 @@ package javacoursebymosh;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Demonstrates the upper bounded wildcard {@code <? extends Type>}.
+ *
+ * <h2>Upper Bounded Wildcard: {@code List<? extends Number>}</h2>
+ * This wildcard restricts the unknown type to be either {@code Number} or a
+ * <b>subtype</b> of {@code Number} (like {@code Integer} or {@code Double}). It is ideal
+ * for scenarios where you need to <b>read</b> from a collection (a "producer").
+ *
+ * <p>This follows the "Producer Extends" part of the <b>PECS</b> principle.</p>
+ *
+ * <h3>Rules:</h3>
+ * <ul>
+ *   <li><b>Reading Elements:</b> You can safely read elements from the list and treat
+ *       them as the bound type (in this case, {@code Number}). This is because you are
+ *       guaranteed that any element will be at least a {@code Number}.</li>
+ *   <li><b>Write-Restricted:</b> You cannot add elements to the list (except for
+ *       {@code null}). The compiler doesn't know the list's exact type—is it a
+ *       {@code List<Integer>} or a {@code List<Double>}? Adding an {@code Integer} to a
+ *       {@code List<Double>} would be a type error, so the compiler prohibits it.</li>
+ * </ul>
+ */
 public class UpperBoundedWildcard {
     public static void demo() {
-//        The upper-bounded wildcard restricts the unknown type to be a subtype of T
-//        (or T itself). This is particularly useful when you need to read items
-//        from a generic structure and ensure that they are at least of type T.
-
-//        Syntax: List<? extends Number>
-//        This means “a list of elements that are of some type that extends Number.”
-
-//        Read-Only: When you use ? extends T, you’re primarily allowed to get (read)
-//        values out because you know that each element is at least of type T.
-//        However, you cannot add any specific type to the list because the list
-//        could be of any type that extends T (e.g., Integer, Double).
-
-//        Flexibility in Return Types: It is used in method declarations when you want
-//        to allow a method to accept a collection of any type that is a subtype of a
-//        particular class.
-
         List<Integer> integers = Arrays.asList(1, 2, 3, 4);
         List<Double> doubles = Arrays.asList(1.5, 2.5, 3.5);
 
-        // This is invalid as Integer cannot be assigned to Double without casting it
-        // doubles.add(integers.getFirst());
-
-        System.out.println(sumList(integers)); // Outputs 10.0
-        System.out.println(sumList(doubles));  // Outputs 7.5
+        System.out.println("Sum of integers: " + sumList(integers));
+        System.out.println("Sum of doubles: " + sumList(doubles));
     }
 
-//    List<? extends Number> means the list can be a list of any class that is a
-//    subclass of Number, so reading a number is safe.
+    /**
+     * Calculates the sum of a list of numbers.
+     *
+     * @param list A list containing elements of type Number or its subclasses.
+     * @return The sum of the list's elements as a double.
+     */
     private static double sumList(List<? extends Number> list) {
         double sum = 0.0;
-        for (Number num : list) { // Up-casting
+        for (Number num : list) {
             sum += num.doubleValue();
         }
         return sum;

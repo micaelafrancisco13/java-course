@@ -1,39 +1,61 @@
 package org.javacoursebymosh;
 
-// T - type or template
-// E - element; acts as a collection
-// just like our methods can have parameters, our
-// classes can have them as well
+/**
+ * A generic list class that can store elements of any type.
+ *
+ * <h2>Type Parameter</h2>
+ * The {@code <T>} in the class declaration is a <b>type parameter</b>. It acts as a
+ * placeholder for a specific data type that will be provided when an instance of
+ * {@code GenericList} is created.
+ *
+ * <p>Common conventions for type parameters:</p>
+ * <ul>
+ *   <li>{@code T} for Type</li>
+ *   <li>{@code E} for Element (often used in collections)</li>
+ *   <li>{@code K} for Key</li>
+ *   <li>{@code V} for Value</li>
+ * </ul>
+ *
+ * <h2>Generic Array Creation</h2>
+ * Creating a generic array directly like {@code new T[10]} is illegal in Java.
+ * This is due to <b>type erasure</b>, where the type {@code T} is not known at runtime.
+ *
+ * <p>
+ * The common workaround is to create an {@code Object} array and cast it to a generic
+ * array: {@code (T[]) new Object[10]}. This generates an "unchecked cast" warning but
+ * is a widely accepted practice for creating generic collections backed by arrays.
+ * </p>
+ *
+ * @param <T> The type of elements to be stored in this list.
+ */
 public class GenericList<T> {
-    // new T[10] results to compilation error because the JVM
-    // does not know the type of "T" at compile-time.
-    // note that the line below produces ClassCastException.
-    // why? see line 23 and onwards
+
+    /**
+     * The underlying array to store the list items.
+     */
     private final T[] items = (T[]) new Object[10];
+
+    /**
+     * The current number of items in the list.
+     */
     private int count;
 
+    /**
+     * Adds an item to the end of the list.
+     *
+     * @param item The item of type T to be added.
+     */
     public void add(T item) {
         items[count++] = item;
     }
 
+    /**
+     * Retrieves the item at the specified index.
+     *
+     * @param index The index of the item to retrieve.
+     * @return The item of type T at the given index.
+     */
     public T get(int index) {
         return items[index];
     }
-
-    // Line 24 does not work.
-    // Number number = new Object();
-
-    // An instance of Object (created by new Object()) is not necessarily a Number.
-    // Although every Number is an Object, not every Object is a Number.
-    // The type system enforces that the right-hand side must be of type Number (or a
-    // subclass thereof) for this assignment to be valid. Since Object is a more general
-    // type, the compiler rejects this assignment.
-
-    // Line 33 works.
-    // Object number = (Number) 10;
-
-    // The literal 10 is first autoboxed into an Integer (which is a subclass of Number).
-    // The cast (Number) 10 tells the compiler to treat the resulting Integer as a Number.
-    // Since Integer is indeed a Number, the cast is valid. Finally, assigning that Number
-    // to an Object is allowed because every Number is an Object.
 }
