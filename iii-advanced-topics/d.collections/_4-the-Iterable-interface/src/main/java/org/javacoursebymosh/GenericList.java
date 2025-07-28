@@ -2,13 +2,18 @@ package org.javacoursebymosh;
 
 import java.util.Iterator;
 
-// we want to implement the Iterable interface in this class,
-// and then have other classes that use this class program against
-// the Iterable interface. this interface has 3 methods, forEach(),
-// iterator(), and spliterator(). the forEach() and spliterator()
-// have default implementations.
+/**
+ * A generic list class that implements the {@code Iterable} interface to support
+ * iteration via a for-each loop.
+ *
+ * <p>By implementing {@code Iterable<T>}, this class agrees to provide an {@code Iterator}
+ * object, which encapsulates the logic for traversing the list's elements without
+ * exposing the underlying array structure.
+ *
+ * @param <T> The type of elements to be stored in this list.
+ */
 public class GenericList<T> implements Iterable<T> {
-    private T[] items = (T[]) new Object[10];
+    private final T[] items = (T[]) new Object[10];
     private int count;
 
     public void add(T item) {
@@ -19,9 +24,19 @@ public class GenericList<T> implements Iterable<T> {
         return items[index];
     }
 
-    // go back to Main class
+    /**
+     * Returns an iterator over the elements in this list.
+     *
+     * <p>This method fulfills the contract of the {@code Iterable} interface. It is
+     * responsible for creating and returning a new {@code Iterator} instance that
+     * knows how to traverse the elements of this specific list.
+     *
+     * @return an Iterator.
+     */
     @Override
     public Iterator<T> iterator() {
+        // NOTE: Returning null is a placeholder. A concrete implementation
+        // of the Iterator interface is required here.
         return null;
     }
 }

@@ -1,29 +1,56 @@
 package org.javacoursebymosh;
 
+/**
+ * Demonstrates the limitations of custom collections with respect to iteration
+ * and highlights why exposing internal structures is a poor design choice.
+ */
 public class Main {
-    public static void main(String[] args) {
-        // the Iterable interface is at the top of the hierarchy.
-        // more accurately, this interface isn't a part of the
-        // Collections framework, in fact, it's part of the
-        // "java.lang" package.
 
+    /**
+     * Entry point of the application.
+     *
+     * <p><strong>The Iteration Problem</strong><br>
+     * Custom collection classes (like {@code GenericList}) do not support for-each loops by default.
+     * For example, the following code will not compile:
+     *
+     * <pre>{@code
+     * for (var item : genericList) {  // Compile-time error!
+     *     // ...
+     * }
+     * }</pre>
+     *
+     * <p>This raises the question: How can we iterate over a custom list without exposing
+     * or depending on its internal structure?
+     *
+     * <hr>
+     *
+     * <p><strong>Why Exposing Internals Is a Bad Idea</strong><br>
+     * A naive workaround is to make the internal array of {@code GenericList} public.
+     * However, this violates the principle of <strong>encapsulation</strong>, leading to several issues:
+     *
+     * <ul>
+     *   <li><strong>Breaks abstraction:</strong> External code becomes dependent on internal
+     *       implementation details.</li>
+     *   <li><strong>Reduces flexibility:</strong> Changes to the internal structure (e.g., switching
+     *       from an array to an {@code ArrayList}) can break dependent code.</li>
+     *   <li><strong>Increases maintenance cost:</strong> Any internal refactor would ripple
+     *       through all code that relies on direct access.</li>
+     * </ul>
+     *
+     * <p><strong>✅ Best Practice:</strong> Implement the {@code Iterable} interface to allow
+     * for-each iteration while preserving encapsulation and flexibility.
+     *
+     * @param args Command-line arguments (not used).
+     */
+    public static void main(String[] args) {
         var genericList = new GenericList<String>();
         genericList.add("a");
         genericList.add("b");
         genericList.add("c");
-        genericList.add("d");
-        genericList.add("e");
 
-        // "for (var item : genericList)" throws a compilation error
-        // one way to solve this problem is go back to the GenericList
-        // and make the "items" field public, then we'll be able to
-        // access it.
-        // "for (var item : genericList.items)"
-        // this approach violates the abstraction principle, and if we
-        // change its data structure (e.g., ArrayList<T>), all the code
-        // that uses this field will have to be changed.
-
-        // how can we iterate through a list w/o knowing its internal
-        // implementation?
+        // Iteration will only be supported after implementing Iterable in GenericList.
+        // for (var item : genericList) {
+        //     System.out.println(item);
+        // }
     }
 }

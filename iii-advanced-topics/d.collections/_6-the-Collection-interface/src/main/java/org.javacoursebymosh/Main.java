@@ -1,19 +1,24 @@
 package org.javacoursebymosh;
 
+/**
+ * Introduces the {@code Collection} interface, the foundation of the Java Collections Framework.
+ *
+ * <p>The framework is built upon a hierarchy of interfaces:
+ *
+ * <pre>{@code
+ * Iterable
+ *    |
+ * Collection
+ *  /    |    \
+ * List  Queue  Set
+ * }</pre>
+ *
+ * <p>The {@code Collection} interface acts as a blueprint for any class that represents a
+ * group of objects. It defines the core operations that a collection should support,
+ * such as adding, removing, and querying elements.
+ */
 public class Main {
     public static void main(String[] args) {
-        // the following are interfaces with inheritance applied:
-        //          Iterable
-        //         Collection
-        //      List   Queue   Set
-
-        // the Collection interface represents an object that
-        // acts as a container or collection of objects.
-        // in a collection, we should be able to do the ff.
-        // add an object
-        // remove an object
-        // check for the existence of an object and so on...
-
         CollectionsDemo.show();
     }
 }
