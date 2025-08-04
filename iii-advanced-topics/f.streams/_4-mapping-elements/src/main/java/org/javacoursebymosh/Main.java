@@ -2,6 +2,7 @@ package org.javacoursebymosh;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Main {
@@ -11,10 +12,11 @@ public class Main {
         List<Movie> movies = List.of(
                 new Movie("a", 10),
                 new Movie("b", 15),
-                new Movie("c", 20)
+                new Movie("c", 20),
+                new Movie("c", 30)
         );
 
-        // we're only interested on the movie names.
+        // we're only interested in the movie names.
         // instead of having a stream of movie objects, we're going to
         // have a stream of strings where the strings are the movie
         // titles.
@@ -26,12 +28,18 @@ public class Main {
                 .map(Movie::getTitle)
                 .forEach(System.out::println);
 
+        Collection<String> titles = movies
+                .stream()
+                        .map(Movie::getTitle)
+                                .collect(Collectors.toSet());
+        System.out.println("Titles: " + titles);
+
         // flatMap() usage
         // every object in this stream is a list of integers
         Stream.of(List.of(1, 2, 3), List.of(4, 5, 6))
                 .forEach(System.out::println);
 
-        // line 31 prints:
+        // line 40 prints:
         // [1, 2, 3]
         // [4, 5, 6]
 
@@ -45,7 +53,7 @@ public class Main {
 
         // Stream<List<X>> to Stream<X>
 
-        // line 41 prints:
+        // line 49 prints:
         // 1
         // 2
         // 3
