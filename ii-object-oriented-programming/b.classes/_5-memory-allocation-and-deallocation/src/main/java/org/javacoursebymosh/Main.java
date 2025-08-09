@@ -10,7 +10,19 @@ public class Main {
         // Java runtime will execute "var textBox1", it will
         // allocate memory in the stack, and in this memory
         // location, it'll store the TextBox object's address in
-        // the heap, which is 100
+        // the heap, which is 100.
+
+        /*
+        *   [Stack]                               [Heap]
+        *   +------------+------------+-------+   +---------------------------+
+        *   | Stack Addr | Name       | Value |   | #100 : ToyBox {           |
+        *   +------------+------------+-------+   |     color = "Red"         |
+        *   | 0x7ffeefA0 | x          | 10    |   |     capacity = 5          |
+        *   | 0x7ffeef9C | y          | 10    |   +---------------------------+
+        *   | 0x7ffeef98 | tb1        | #100  |
+        *   | 0x7ffeef94 | tb2        | #100  |
+        *   +------------+------------+-------+
+        * */
         var textBox1 = new TextBox();
         var textBox2 = textBox1;
         textBox2.setText("Hello World");
